@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import (
 from instr import *
 
 class FinalWin(QWidget):
-    def __init__(self):
+    def __init__(self, exp):
         '''окно, в котором проводится опрос'''
         super().__init__()
         #получаем данные об эксперименте
@@ -29,55 +29,55 @@ class FinalWin(QWidget):
         if self.exp.age == 7 or self.exp.age == 8:
             if self.index >= 21:
                 return txt_res1
-            elif self.exp.age < 21 or self.exp.age >= 17:
+            elif self.index < 21 or self.index >= 17:
                 return txt_res2
-            elif self.exp.age < 17 or self.exp.age >= 12:
+            elif self.index < 17 or self.index >= 12:
                 return txt_res3
-            elif self.exp.age < 12 or self.exp.age >= 6.5:
+            elif self.index < 12 or self.index >= 6.5:
                 return txt_res4
             else:
                 return txt_res5
         if self.exp.age == 9 or self.exp.age == 10:
             if self.index >= 19.5:
                 return txt_res1
-            elif self.exp.age < 19.5 or self.exp.age >= 15.5:
+            elif self.index < 19.5 or self.index >= 15.5:
                 return txt_res2
-            elif self.exp.age < 15.5 or self.exp.age >= 10.5:
+            elif self.index < 15.5 or self.index >= 10.5:
                 return txt_res3
-            elif self.exp.age < 10.5 or self.exp.age >= 5:
+            elif self.index < 10.5 or self.index >= 5:
                 return txt_res4
             else:
                 return txt_res5
         if self.exp.age == 11 or self.exp.age == 12:
             if self.index >= 18:
                 return txt_res1
-            elif self.exp.age < 18 or self.exp.age >= 14:
+            elif self.index < 18 or self.index >= 14:
                 return txt_res2
-            elif self.exp.age < 14 or self.exp.age >= 9:
+            elif self.index < 14 or self.index >= 9:
                 return txt_res3
-            elif self.exp.age < 9 or self.exp.age >= 3.5:
+            elif self.index < 9 or self.index >= 3.5:
                 return txt_res4
             else:
                 return txt_res5
         if self.exp.age == 13 or self.exp.age == 14:
             if self.index >= 16.5:
                 return txt_res1
-            elif self.exp.age < 16.5 or self.exp.age >= 12.5:
+            elif self.index < 16.5 or self.index >= 12.5:
                 return txt_res2
-            elif self.exp.age < 12.5 or self.exp.age >= 7.5:
+            elif self.index < 12.5 or self.index >= 7.5:
                 return txt_res3
-            elif self.exp.age < 7.5 or self.exp.age >= 2:
+            elif self.index < 7.5 or self.index >= 2:
                 return txt_res4
             else:
                 return txt_res5
         if self.exp.age >= 15:
             if self.index >= 15:
                 return txt_res1
-            elif self.exp.age < 15 or self.exp.age >= 11:
+            elif self.index < 15 or self.index >= 11:
                 return txt_res2
-            elif self.exp.age < 11 or self.exp.age >= 6:
+            elif self.index < 11 or self.index >= 6:
                 return txt_res3
-            elif self.exp.age < 6 or self.exp.age >= 0.5:
+            elif self.index < 6 or self.index >= 0.5:
                 return txt_res4
             else:
                 return txt_res5
