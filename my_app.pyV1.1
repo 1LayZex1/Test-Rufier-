@@ -6,8 +6,8 @@ from PyQt5.QtWidgets import (
     QPushButton, QLabel, QLineEdit
 )
 
-from instr import*
-from second_win import*
+from instr import *
+from second_win import *
 
 class MainWin(QWidget):
     def __init__(self):
@@ -40,7 +40,7 @@ class MainWin(QWidget):
         self.hide()
 
     def connects(self):
-        self.btn_next.clicked.connect(self.next_click)
+        self.btn_next.cliked.connect(self.next_click)
 
     '''уcтанавливает, как будет выглядеть окно (надпись, размер, место)'''
     def set_appear(self):
